@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Hind', sans-serif;
+}
+.menu{
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+}
+.menu li{
+    display: inline-block;
+    background-color: #48dbfb;
+    padding: 6px 10px;
+    margin: 0 2px;
+    transition: all 0.4s;
+}
+.menu li:hover{
+    background-color: white;
+}
+.menu li:hover a{
+    color: #48dbfb;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all 0.4s;
+    position: relative;
+}
+.menu li a::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transition: all 0.4s;
+}
+.menu li:hover a::before{
+    width: 100%;
+}
+.banner{
+    background-color: #48dbfb;
+}
+.banner p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding-top: 100px;
+}
+.banner h1{
+    text-align: center;
+    padding: 20pxpx 0;
+    color: white;
+    font-size: 50px;
+}
+.button{
+    text-align: center;
+}
+.btn{
+    text-decoration: none;
+    color: #dddddd;
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0 0 100px 0;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 0.4s;
+}
+.btn:hover{
+    color: #dddddd;
+
+    
+}
+.btn:hover::before{
+    width: 100%;
+
+}
+.content{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+.main-div{
+    text-align: center;
+}
+.box{
+    width: 20%;
+    height: 200px;
+    display: inline-block;
+    margin: 0 10px;
+    overflow: hidden;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    
+}
+.first{
+    margin: 15px 0;
+}
+.box1:hover img{
+    transform: rotate(360deg) scale(1.2);
+
+}
+.box2:hover img{
+    transform: rotate(30deg) scale(1.2);
+}
+.box3:hover img{
+    transform: rotate(-30deg) scale(1.2);
+}
+.box4:hover img{
+    transform: rotate(-30deg) scale(1.2);
+}
+.box5:hover img{
+    transform: rotate(30deg) scale(1.2);
+}
+.box6:hover img{
+    transform: rotate(360deg) scale(1.2);
+}
+.box7:hover img{
+    transform: rotate(5deg) scale(1.2);
+}
+.box8:hover img{
+    transform: rotate(-5deg) scale(1.2);
+}
+.watch-video{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 66px;
+}
+.step{
+    position: relative;
+    height: 160px;
+}
+.allstep {
+	background: black;
+	padding: 15px 20px;
+	color: white;
+}
+.allstep:hover{
+    background: #3ccbff;
+    color: black;
+    transition: all 0.4s;
+}
+.step1{
+    position: absolute;
+    top: 25%;
+	left: 13%;
+    transform: rotate(-40deg) scale(1);
+    transition: all 0.4s;
+}
+.step1:hover{
+    transform: rotate(0deg) scale(1.2);
+
+}
+.step2{
+    position: absolute;
+    top: 25%;
+	left: 48%;
+}
+.step2:hover{
+    transform: scale(1.2);
+}
+.step3{
+    position: absolute;
+    top: 25%;
+	right: 13%;
+    transform: rotate(40deg) scale(1);
+    transition: all 0.4s;
+}
+.step3:hover{
+    transform: rotate(0deg) scale(1.2);
+    
+}
+.copyright {
+	background-color: #2e2f31;
+	text-align: center;
+	color: white;
+	padding: 30px 0;
+}
